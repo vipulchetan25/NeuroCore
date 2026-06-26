@@ -59,7 +59,7 @@ NeuroCore/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/NeuroCore.git
+git clone https://github.com/vipulchetan25/NeuroCore.git
 ```
 
 ### Open the project
