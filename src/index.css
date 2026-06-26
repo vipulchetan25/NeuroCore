@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-arctic-powder: #F1F6F4;
+  --color-mystic-mint: #D9E8E2;
+  --color-forsythia: #FFC801;
+  --color-deep-saffron: #FF9932;
+  --color-nocturnal-expedition: #114C5A;
+  --color-oceanic-noir: #172B36;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom transitions and scrollbar styling */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-oceanic-noir);
+  color: var(--color-arctic-powder);
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--color-forsythia);
+  color: var(--color-oceanic-noir);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #101e26;
+}
+::-webkit-scrollbar-thumb {
+  background: #233e4f;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-nocturnal-expedition);
+}
+
+/* Custom noise overlay */
+.noise-bg {
+  background-image: radial-gradient(rgba(23, 43, 54, 0.4) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Custom accordion transition style */
+.accordion-wrapper {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
